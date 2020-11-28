@@ -1,6 +1,8 @@
 const path = require('path');
 
 module.exports = {
+  mode: 'development',
+  devtool: 'eval-source-map',
   entry: './src/index.ts',
   module: {
     rules: [
@@ -32,3 +34,5 @@ module.exports = {
 //   - we put here a test, which tests every file, if the file passes the test, then it does something.
 //     - the test is a regex, that checks if the file is a '.ts' file
 //   - we specify that we want to compile just .ts file in the source folder (include: [path.resolve(__dirname, 'source')])
+// - mode
+//   - describes which mode we operate: `mode: 'development',` or `mode: 'production',`

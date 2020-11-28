@@ -28,3 +28,8 @@
 ## Adding module files
 - Webpack doest know how to resolve adding module .js files
 - Add a resolve property to webpack config js file : `resolve: { extensions: ['.ts', '.js'] },`
+
+# Source map
+- this creatd a link between our public nad src files
+- enables in ts config: `"sourceMap": true,`
+- in webpack config js file enable: `devtool: 'eval-source-map',`
